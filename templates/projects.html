@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+
+{% block title %}Projects - BI's Portfolio{% endblock %}
+
+{% block content %}
+<section id="projects">
+    <div class="section-header" data-aos="fade-down">
+        <h1>My Projects</h1>
+        <p class="sub">Things I've built recently</p>
+    </div>
+    
+    <div class="card-grid">
+        <div class="card" data-aos="fade-up" data-aos-delay="100">
+            <div class="card-icon">🔍</div>
+            <h3>WordHunt</h3>
+            <p>A word-guessing game similar to Wordle where you guess words from a list. Built as a prototype in C.</p>
+            <div class="card-tags"><span>C</span><span>Game</span><span>CLI</span></div>
+            <a href="https://github.com/Ailveee/WordHunt" target="_blank" class="card-link">View on GitHub →</a>
+        </div>
+        
+        <div class="card" data-aos="fade-up" data-aos-delay="200">
+            <div class="card-icon">💰</div>
+            <h3>Budget App</h3>
+            <p>A budget management application built with PHP to help track expenses and manage finances.</p>
+            <div class="card-tags"><span>PHP</span><span>Web</span><span>Finance</span></div>
+            <a href="https://github.com/Ailveee/budget-app" target="_blank" class="card-link">View on GitHub →</a>
+        </div>
+        
+        <div class="card" data-aos="fade-up" data-aos-delay="300">
+            <div class="card-icon">🧠</div>
+            <h3>Memory Game</h3>
+            <p>A classic memory card matching game built with Java to test and improve your memory skills.</p>
+            <div class="card-tags"><span>Java</span><span>Game</span><span>GUI</span></div>
+            <a href="https://github.com/Ailveee/MemoryGame" target="_blank" class="card-link">View on GitHub →</a>
+        </div>
+        
+        <div class="card" data-aos="fade-up" data-aos-delay="400">
+            <div class="card-icon">⭐</div>
+            <h3>StarChaser Chatbot</h3>
+            <p>An interactive chatbot built with HTML, CSS, and JavaScript for engaging conversations.</p>
+            <div class="card-tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+            <a href="https://github.com/Ailveee/StarChaser-Chatbot" target="_blank" class="card-link">View on GitHub →</a>
+        </div>
+        
+        <div class="card" data-aos="fade-up" data-aos-delay="500">
+            <div class="card-icon">📝</div>
+            <h3>Blogger Backend</h3>
+            <p>A full-featured blog website backend built with Symfony PHP framework for content management.</p>
+            <div class="card-tags"><span>PHP</span><span>Symfony</span><span>Backend</span></div>
+            <a href="https://github.com/Ailveee/Blogger-backend" target="_blank" class="card-link">View on GitHub →</a>
+        </div>
+        
+        <div class="card" data-aos="fade-up" data-aos-delay="600">
+            <div class="card-icon">🕵️</div>
+            <h3>StegoDetect</h3>
+            <p>A Python-based tool for detecting steganography in images and analyzing hidden data.</p>
+            <div class="card-tags"><span>Python</span><span>Security</span><span>Steganography</span></div>
+            <a href="https://github.com/Ailveee/StegoDetect" target="_blank" class="card-link">View on GitHub →</a>
+        </div>
+    </div>
+</section>
+{% endblock %}
