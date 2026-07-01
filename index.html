@@ -1,42 +1,51 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}BI's Portfolio{% endblock %}</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    
-    <!-- AOS Animation Library -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BI's Portfolio</title>
+    <link rel="stylesheet" href="static/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 </head>
 <body>
     <!-- Particles Background -->
     <div id="particles-js"></div>
-    
+
     <!-- Scroll Progress Bar -->
     <div class="scroll-progress" id="scrollProgress"></div>
-    
+
     <!-- Floating Navigation -->
     <nav class="floating-nav">
         <div class="nav-container">
-            <a href="/" class="logo">BI</a>
+            <a href="index.html" class="logo">BI</a>
             <div class="nav-links">
-                <a href="/">Home</a>
-                <a href="/about">About</a>
-                <a href="/projects">Projects</a>
-                <a href="/contact">Contact</a>
-                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
-                    🌙
-                </button>
+                <a href="index.html" class="active">Home</a>
+                <a href="about.html">About</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Contact</a>
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
             </div>
         </div>
     </nav>
 
     <!-- Main Content -->
     <main>
-        {% block content %}
-        {% endblock %}
+        <section id="home" class="hero">
+            <div data-aos="fade-up" data-aos-delay="100">
+                <h1>BI</h1>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="300">
+                <p class="subtitle">Developer · Creator · Problem Solver</p>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="500">
+                <p class="tagline">Building things that matter, one line of code at a time.</p>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="700" class="hero-buttons">
+                <a href="projects.html" class="cta-button">View My Work ✨</a>
+                <a href="https://github.com/Ailveee" target="_blank" class="cta-button secondary">🐙 GitHub</a>
+            </div>
+        </section>
     </main>
 
     <!-- Footer -->
@@ -51,18 +60,11 @@
         </div>
     </footer>
 
-    <!-- AOS -->
+    <!-- Scripts -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init({
-            duration: 800,
-            once: false,
-            offset: 100,
-            easing: 'ease-in-out'
-        });
+        AOS.init({ duration: 800, once: false, offset: 100, easing: 'ease-in-out' });
     </script>
-    
-    <!-- Particles.js -->
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script>
         particlesJS('particles-js', {
@@ -81,7 +83,6 @@
             }
         });
     </script>
-    
-    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <script src="static/script.js"></script>
 </body>
 </html>
